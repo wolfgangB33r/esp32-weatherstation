@@ -14,7 +14,7 @@ void loop() {
   delay(1000);                       // wait for a second
   digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW
   delay(10000);  // wait for a second
-  // Deep sleep mode for 30 seconds, the ESP8266 wakes up by itself when GPIO 16 (D0 in NodeMCU board) is connected to the RESET pin
+  // Deep sleep mode for 1 hour, the ESP8266 wakes up by itself when GPIO 16 (D0 in NodeMCU board) is connected to the RESET pin
   Serial.println("Going to sleep now");
-  ESP.deepSleep(30e6);
+  ESP.deepSleep(3600e6);
 }
